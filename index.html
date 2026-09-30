@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Anuoluwapo Clothing & Luxury Wears — modern elegance, timeless style.">
+<title>Anuoluwapo | Clothing & Luxury Wears</title>
+<style>
+:root{--ink:#11100f;--cream:#f7f2ea;--gold:#b08a45;--muted:#766f66;--white:#fff;--line:#ded7cc}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:var(--ink);color:#eee;padding:9px;text-align:center;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+nav{height:78px;background:rgba(247,242,234,.96);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-size:24px;letter-spacing:1px}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:30px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
+.navlinks a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{min-height:720px;display:grid;grid-template-columns:1.05fr .95fr;background:var(--ink);color:#fff}
+.hero-copy{display:flex;align-items:center;padding:70px 8vw}
+.kicker{color:#d6b477;text-transform:uppercase;letter-spacing:4px;font-size:11px;margin-bottom:18px}
+h1{font:normal clamp(48px,7vw,92px)/.95 Georgia,serif;letter-spacing:-3px;margin-bottom:25px}
+.hero p{max-width:490px;color:#d6d0c7;font-size:17px;margin-bottom:34px}
+.btn{display:inline-block;padding:15px 26px;background:#fff;color:#111;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:bold;margin-right:10px}
+.btn.gold{background:var(--gold);color:#fff}.btn.outline{background:transparent;color:#fff;border:1px solid #777}
+.hero-image{background:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85') center/cover;min-height:560px}
+.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:42px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;color:var(--gold);margin-bottom:8px}
+h2{font:normal 48px/1.05 Georgia,serif}
+.link{font-size:12px;text-transform:uppercase;letter-spacing:2px;border-bottom:1px solid var(--ink);padding-bottom:5px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff}.card-img{height:390px;background-size:cover;background-position:center}
+.card-body{padding:18px}.card-body h3{font:normal 20px Georgia,serif}.price{color:var(--gold);margin-top:7px;font-size:13px}
+.collections{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.collection{height:510px;position:relative;background-size:cover;background-position:center;display:flex;align-items:end;padding:28px;color:#fff}.collection:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.7))}.collection div{position:relative;z-index:1}.collection h3{font:normal 34px Georgia,serif}.collection p{font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.story-img{height:590px;background:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85') center/cover}.story-copy p{color:var(--muted);margin:20px 0 30px;max-width:520px}
+.quote{background:var(--ink);color:#fff;text-align:center;padding:110px 20px}.quote blockquote{font:normal clamp(28px,4vw,52px)/1.15 Georgia,serif;max-width:850px;margin:auto}.quote cite{display:block;color:#cdb17d;margin-top:25px;font-style:normal;font-size:11px;letter-spacing:3px;text-transform:uppercase}
+.newsletter{padding:85px 0;text-align:center}.newsletter p{color:var(--muted);margin:12px auto 25px}.form{display:flex;max-width:540px;margin:auto}.form input{flex:1;border:1px solid var(--line);padding:16px;background:#fff}.form button{border:0;padding:0 24px;background:var(--ink);color:#fff;text-transform:uppercase;letter-spacing:1.5px}
+footer{background:#0c0c0b;color:#ccc;padding:60px 0 25px}.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:50px}.footer-logo{font:normal 28px Georgia,serif;color:#fff}.footergrid p{color:#999;font-size:13px;margin-top:15px;max-width:330px}.footer h4{color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:18px}.footer a{display:block;color:#aaa;font-size:13px;margin:9px 0}.copyright{border-top:1px solid #282725;margin-top:45px;padding-top:20px;color:#777;font-size:11px;display:flex;justify-content:space-between}
+@media(max-width:800px){.navlinks{display:none}.menu{display:block}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 7vw}.hero-image{min-height:430px}.products{grid-template-columns:repeat(2,1fr)}.card-img{height:330px}.collections{grid-template-columns:1fr}.collection{height:430px}.story{grid-template-columns:1fr;gap:35px}.story-img{height:430px}.footergrid{grid-template-columns:1fr 1fr}.section{padding:70px 0}}
+@media(max-width:500px){.products{grid-template-columns:1fr 1fr;gap:10px}.card-img{height:245px}.card-body{padding:12px}.card-body h3{font-size:16px}.section-head{display:block}.section-head .link{display:inline-block;margin-top:15px}.footergrid{grid-template-columns:1fr}.copyright{display:block}.copyright span{display:block;margin-top:8px}.form{display:block}.form input,.form button{width:100%;height:50px}.form button{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="topbar">Complimentary delivery on selected orders • Lagos & nationwide</div>
+<nav>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+    <a class="logo" href="#">ANUOLU<span>WAPO</span></a>
+    <div class="navlinks"><a href="#new">New In</a><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#contact">Contact</a></div>
+    <button class="menu" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div>
+      <div class="kicker">Clothing & Luxury Wears</div>
+      <h1>Elegance,<br>made personal.</h1>
+      <p>Refined pieces for the woman and man who value exceptional style, beautiful details and effortless confidence.</p>
+      <a class="btn gold" href="#new">Shop New Arrivals</a>
+      <a class="btn outline" href="#collections">Explore</a>
+    </div>
+  </div>
+  <div class="hero-image" aria-label="Fashion editorial image"></div>
+</section>
+
+<section class="section" id="new">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">The edit</div><h2>New arrivals</h2></div><a class="link" href="#contact">View collection</a></div>
+  <div class="products">
+    <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>The Signature Dress</h3><div class="price">₦85,000</div></div></article>
+    <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Ivory Statement Set</h3><div class="price">₦95,000</div></div></article>
+    <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Executive Luxe Blazer</h3><div class="price">₦120,000</div></div></article>
+    <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Midnight Evening Look</h3><div class="price">₦110,000</div></div></article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="collections" style="padding-top:20px">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">Curated for you</div><h2>Collections</h2></div></div>
+  <div class="collections">
+    <a class="collection" style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=80')" href="#new"><div><p>For her</p><h3>Women</h3></div></a>
+    <a class="collection" style="background-image:url('https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=1000&q=80')" href="#new"><div><p>For him</p><h3>Men</h3></div></a>
+    <a class="collection" style="background-image:url('https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=1000&q=80')" href="#new"><div><p>Made to impress</p><h3>Luxury Edit</h3></div></a>
+  </div>
+</div>
+</section>
+
+<section class="section" id="story">
+<div class="container story">
+  <div class="story-img"></div>
+  <div class="story-copy"><div class="eyebrow">Our story</div><h2>Where modern style meets timeless elegance.</h2><p>Anuoluwapo Clothing & Luxury Wears is built around the belief that getting dressed should feel extraordinary. We curate refined silhouettes, elevated fabrics and statement pieces designed to become part of your signature.</p><p>From everyday polish to unforgettable occasions, every piece is selected with confidence, quality and individuality in mind.</p><a class="btn gold" href="#contact">Discover Anuoluwapo</a></div>
+</div>
+</section>
+
+<section class="quote"><blockquote>“Luxury is not about being noticed. It is about being remembered.”</blockquote><cite>Anuoluwapo</cite></section>
+
+<section class="newsletter" id="contact">
+<div class="container"><div class="eyebrow">Stay in the know</div><h2>Join the inner circle</h2><p>Be first to discover new drops, private edits and special offers.</p>
+<div class="form"><input type="email" placeholder="Your email address"><button type="button">Subscribe</button></div>
+<p style="margin-top:25px"><a class="link" href="https://wa.me/2348000000000?text=Hello%20Anuoluwapo%2C%20I%27d%20like%20to%20shop%20your%20luxury%20wears." target="_blank">Order via WhatsApp →</a></p>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footergrid">
+<div><div class="footer-logo">ANUOLUWAPO</div><p>Clothing & Luxury Wears for those who choose elegance, confidence and individuality.</p></div>
+<div><h4>Shop</h4><a href="#new">New Arrivals</a><a href="#collections">Women</a><a href="#collections">Men</a><a href="#collections">Luxury Edit</a></div>
+<div><h4>Company</h4><a href="#story">Our Story</a><a href="#contact">Contact</a><a href="#">Shipping</a><a href="#">Returns</a></div>
+<div><h4>Connect</h4><a href="#">Instagram</a><a href="https://wa.me/2348000000000">WhatsApp</a><a href="mailto:hello@anuoluwapo.com">hello@anuoluwapo.com</a></div>
+</div>
+<div class="copyright"><span>© 2026 Anuoluwapo Clothing & Luxury Wears</span><span>Designed for modern luxury.</span></div>
+</div>
+</footer>
+</body>
+</html>
